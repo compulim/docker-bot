@@ -9,4 +9,4 @@ RUN git clone https://github.com/Microsoft/BotFramework-Emulator.git /emulator
 RUN npm install
 RUN lerna bootstrap --hoist
 RUN lerna run build --scope=@bfemulator/emulator-core --scope=@bfemulator/emulator-cli
-ENTRYPOINT node /emulator/packages/emulator/cli/lib
+ENTRYPOINT node /emulator/packages/emulator/cli/lib -u http://bot-server:3978/api/messages/ -s http://bot-emulator:5000

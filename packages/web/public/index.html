@@ -66,7 +66,7 @@
       window['botchatDebug'] = params.get('debug') && params.get('debug') === 'true';
 
       const botConnection = new BotChat.DirectLine({
-        domain: params.get('domain') || 'https://localhost:5000/v3/directline',
+        domain: params.get('domain') || 'http://localhost:5000/v3/directline',
         secret: params.get('s'),
         token: params.get('t'),
         webSocket: params.get('webSocket') && params.get('webSocket') === 'true' // defaults to true
