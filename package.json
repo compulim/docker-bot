@@ -1,0 +1,30 @@
+{
+  "name": "docker-bot",
+  "version": "1.0.0",
+  "description": "Template for developing bot with Docker and Bot Framework Emulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compulim/docker-bot.git"
+  },
+  "keywords": [
+    "docker",
+    "botframework",
+    "abs",
+    "azure",
+    "botbuilder",
+    "redux"
+  ],
+  "author": "William Wong <compulim@hotmail.com> (http://compulim.info/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/compulim/docker-bot/issues"
+  },
+  "homepage": "https://github.com/compulim/docker-bot#readme",
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  }
+}

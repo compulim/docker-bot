@@ -1,0 +1,30 @@
+version: '3'
+services:
+  bot-server:
+    build:
+      context: ./packages/bot
+    environment:
+      MICROSOFT_APP_ID: ""
+      MICROSOFT_APP_PASSWORD: ""
+    image: bot-server:latest
+    # ports:
+    # - "3978:3978"
+  bot-emulator:
+    build:
+      context: ./packages/emulator
+    environment:
+      MICROSOFT_APP_ID: ""
+      MICROSOFT_APP_PASSWORD: ""
+    depends_on:
+    - bot-server
+    image: bot-emulator:latest
+    ports:
+    - "5000:5000"
+  web-server:
+    build:
+      context: ./packages/web
+    depends_on:
+    - bot-emulator
+    image: web-server:latest
+    ports:
+    - "3000:3000"
