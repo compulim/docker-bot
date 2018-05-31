@@ -6,6 +6,10 @@ Template for developing bot with Docker and Bot Framework Emulator
 
 With Docker installed, run `docker-compose up`. Then navigate to [http://localhost:3000/](http://localhost:3000/).
 
+## Development
+
+Modify your bot code at [packages/bot](https://github.com/compulim/docker-bot/tree/master/packages/bot).
+
 ## Ports
 
 | Port | Exposed | Image | Description | Incoming connection from |
