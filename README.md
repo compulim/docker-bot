@@ -6,6 +6,14 @@ Template for developing bot with Docker and Bot Framework Emulator
 
 With Docker installed, run `docker-compose up`. Then navigate to [http://localhost:3000/](http://localhost:3000/).
 
+## Ports
+
+| Port | Exposed | Image | Description | Incoming connection from |
+| - | - | - | - | - |
+| 3000 | Yes | `web-server` | Static page for Web Chat | Browser |
+| 3978 | No | `bot-server` | Bot.js hosted on Restify | `bot-emulator` |
+| 5000 | Yes | `bot-emulator` | Emulated Direct Line server | Browser and `bot-server` |
+
 # Roadmap
 
 * Bot.js
