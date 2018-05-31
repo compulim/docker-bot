@@ -6,6 +6,15 @@ Template for developing bot with Docker and Bot Framework Emulator
 
 With Docker installed, run `docker-compose up`. Then navigate to [http://localhost:3000/](http://localhost:3000/).
 
+# Roadmap
+
+* Bot.js
+   * Create some responses that fire Redux actions
+* Web server
+   * Use Web Chat from NPM, instead of CDN
+   * Add Redux
+   * For activity with `{ event: 'redux' }`, pump it into Redux directly
+
 # Contributions
 
 Like us? [Star](https://github.com/compulim/docker-bot/stargazers) us.
