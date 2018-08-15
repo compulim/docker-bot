@@ -6,8 +6,8 @@ RUN npm run build
 
 FROM node:alpine
 LABEL name="bot-dev-server" version="1.0.0"
-ENV PORT=80
-EXPOSE 80
+ENV PORT=3000
+EXPOSE 3000
 ENTRYPOINT npx --no-install serve .
 WORKDIR /webapp/
 RUN npm install serve -g
