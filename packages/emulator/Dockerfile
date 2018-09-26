@@ -6,6 +6,7 @@ RUN apk update && apk upgrade && apk add git
 RUN npm install -g lerna@2.11
 WORKDIR /emulator/
 RUN git clone https://github.com/Microsoft/BotFramework-Emulator.git /emulator
+RUN git checkout 3b671eeca53f236eb4c5c721df69937ee9db2573 
 RUN npm install
 RUN lerna bootstrap --hoist
 RUN lerna run build --scope=@bfemulator/emulator-core --scope=@bfemulator/emulator-cli

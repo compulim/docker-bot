@@ -23,4 +23,4 @@ services:
       context: ./packages/web
     image: web-server:latest
     ports:
-    - "3000:3000"
+    - "3000:80"
